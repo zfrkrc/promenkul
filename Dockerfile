@@ -1,2 +1,2 @@
 FROM nginx
-COPY src/royal-homes/promenkul/ /usr/share/nginx/html
+COPY . /usr/share/nginx/html
