@@ -2,12 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\images",
-    "\\assets\\libs\\fontawesome",
-    "\\assets\\libs\\lightGallery-master",
-    "\\assets\\libs\\lightGallery-master\\.github",
-    "\\assets\\libs\\lightGallery-master\\.github\\ISSUE_TEMPLATE"
+    "\\assets\\images"
   ],
-  "SelectedNode": "\\assets\\images\\banner-1.jpg",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
