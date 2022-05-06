@@ -9,4 +9,4 @@ echo "Servis"
 docker ps -a
 echo "Diskler"
 docker image ls -a
-echo "iþ tamam?"
+echo "TAMAM MI??"
