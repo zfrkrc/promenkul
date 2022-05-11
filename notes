@@ -1,0 +1,83 @@
+Dropdown
+
+
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Anasayfa</a>
+									<ul class="dropdown-menu p-0" aria-labelledby="main-menu">
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/home-variation2.html">Home Variation 2</a></li>
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/home-variation3.html">Home Variation 3</a></li>
+									</ul> 
+								</li>
+
+
+
+
+
+Eski Banner in
+
+							<!--	<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Listeler</a>
+									<ul class="dropdown-menu p-0" aria-labelledby="main-menu">
+										<li class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mülk Grid Görünümü</a>
+											<ul class="dropdown-menu p-0 sub-menu sub-menu-dropdown">
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/listing-grid-left-sidebar.html">Grid with left sidebar </a></li>
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/listing-grid-right-sidebar.html">Grid with right sidebar </a></li>
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/listing-full-grid.html">Grid with full width</a></li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Özellik Liste Görünümü</a>
+											<ul class="dropdown-menu p-0">
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/listing-list-left-sidebar.html">List with left sidebar </a></li>
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/listing-list-right-sidebar.html">List with right sidebar </a></li>
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/listing-list-full-width.html">List with full width</a></li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Agenta Liste Görünümü</a>
+											<ul class="dropdown-menu p-0">
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/listing-agent-left-sidebar.html">List with left sidebar </a></li>
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/listing-agent-right-sidebar.html">List with right sidebar </a></li>
+											</ul>
+										</li>
+									</ul>
+							  </li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Single Pages</a>
+									<ul class="dropdown-menu p-0" aria-labelledby="main-menu">
+										<li class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Property</a>
+											<ul class="dropdown-menu p-0">
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/page-property-single-v1.html">Property Template 1</a></li>
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/page-property-single-v2.html">Property Template 2</a></li>
+											</ul>
+										</li>
+										<li class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Acenta</a>
+											<ul class="dropdown-menu p-0">
+												<li><a class="dropdown-item" href="http://zafer.promenkul.org/listing-single-agent.html">Acenta Tek Sayfa </a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+									<ul class="dropdown-menu p-0" aria-labelledby="main-menu">
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/about-us.html">Hakkýmýzda</a></li>
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/contact-us.html">Ýletiþime Geçiniz</a></li>
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/faq.html">FAQ's</a></li>
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/gallery.html">Galeri</a></li>
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/page-membership.html">Üyelik</a></li>
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/page-login.html">Üye Giriþi</a></li>
+									</ul>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="javascript: void(0)" id="main-menu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+									<ul class="dropdown-menu p-0" aria-labelledby="main-menu">
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/blog-v1.html">Blog Listing 1 </a></li>
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/blog-v2.html">Blog Listing 2 </a></li>
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/blog-v3.html">Blog Listing 3</a></li>
+										<li><a class="dropdown-item" href="http://zafer.promenkul.org/blog-single.html">Blog Single</a></li>
+									</ul>
+							-->	</li>
