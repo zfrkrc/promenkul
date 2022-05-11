@@ -1,15 +1,9 @@
 {
   "ExpandedNodes": [
-    "\\assets\\libs\\fontawesome",
-    "\\assets\\libs\\fontawesome\\js",
-    "\\assets\\libs\\fontawesome\\less",
-    "\\assets\\libs\\fontawesome\\metadata",
-    "\\assets\\libs\\fontawesome\\scss",
-    "\\assets\\libs\\fontawesome\\sprites",
-    "\\assets\\libs\\fontawesome\\svgs",
-    "\\assets\\libs\\fontawesome\\svgs\\brands",
-    "\\assets\\libs\\lightGallery-master",
-    "\\assets\\libs\\lightGallery-master\\lib"
+    "",
+    "\\assets",
+    "\\assets\\css"
   ],
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
