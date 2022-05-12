@@ -4,7 +4,7 @@ services:
   webserver:
     image: nginx
     volumes:
-      - ./:/usr/share/nginx/html:ro
+      - ./nginx/:/usr/share/nginx/html:ro
       - ./certbot/www:/var/www/certbot:ro
     ports:
       - 80:80
