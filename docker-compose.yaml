@@ -7,7 +7,7 @@ services:
       - ./nginx:/usr/share/nginx/html:ro
       - ./certbot/www/certs.crt:/etc/ssl/certs.crt:ro
       - ./certbot/www/private.key:/etc/ssl/private.key:ro
-      - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./conf/nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - 80:80
       - 443:443
