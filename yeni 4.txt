@@ -1,0 +1,30 @@
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: Zafer
+Email address: zfrkrc@gmail.com
+Comment: zk
+You selected this USER-ID:
+    "Zafer (zk) <zfrkrc@gmail.com>"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? o
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: /root/.gnupg/trustdb.gpg: trustdb created
+gpg: key 53E6258693053654 marked as ultimately trusted
+gpg: directory '/root/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/root/.gnupg/openpgp-revocs.d/B9852512924174DF                                                                            C78597FE53E6258693053654.rev'
+public and secret key created and signed.
+
+pub   rsa3072 2022-04-27 [SC] [expires: 2023-03-23]
+      B9852512924174DFC78597FE53E6258693053654
+uid                      Zafer (zk) <zfrkrc@gmail.com>
+sub   rsa3072 2022-04-27 [E] [expires: 2023-03-23]
+
+root@zzone06n01:/home/webDocker/src/royal-homes#
