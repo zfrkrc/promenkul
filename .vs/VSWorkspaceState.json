@@ -1,7 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\conf"
+    "\\certbot\\www"
   ],
   "SelectedNode": "\\docker-compose.yaml",
   "PreviewInSolutionExplorer": false
