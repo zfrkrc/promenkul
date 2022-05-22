@@ -1,6 +1,20 @@
 version: '3'
 
 services:
+  traefik:
+    image: "traefik:v2.6"
+    container_name: "traefik"
+    hostname: traefik
+    command:
+      #- "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    ports:
+      - "80:80"
   nginx:
     image: nginx:latest
     container_name: promenkul
@@ -12,22 +26,6 @@ services:
       - "traefik.enable=true"
       - "traefik.http.middlewares.promenkul_compress.compress=true"
       - "traefik.http.routers.promenkul.middlewares=promenkul_compress"
-      - "traefik.http.routers.nginx.rule=Host(`promenkul.org`)"
-  traefik:
-    image: "traefik:v2.6"
-    container_name: "traefik"
-    hostname: traefik
-    command:
-      #- "--log.level=DEBUG"
-      - "--api.insecure=true"
-      - "--providers.docker=true"
-      - "--providers.docker.exposedbydefault=false"
-      - "--entrypoints.web.address=:80"
-    ports:
-      - "80:80"
-      - "8080:8080"
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock:ro"
 networks:
   default:
     external:
