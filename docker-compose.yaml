@@ -26,10 +26,16 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.nginx.entrypoints=web"
       - "traefik.http.routers.nginx.rule=Host(`www.promenkul.org`)"
+      - "traefik.http.middlewares.test-compress.compress=true"
       - "traefik.http.middlewares.promenkul_compress.compress=true"
-      - "traefik.http.middlewares.promenkul_compress.compress.minresponsebodybytes=16"
+      - "traefik.http.middlewares.promenkul_compress.compress.minresponsebodybytes=200"
       - "traefik.http.middlewares.autodetect.contenttype.autodetect=false"
       - "traefik.http.routers.promenkul.middlewares=promenkul_compress"
+      - "traefik.http.middlewares.limit.buffering.retryExpression=IsNetworkError() && Attempts() < 2"
+
+
+
+
 
 networks:
   default:
