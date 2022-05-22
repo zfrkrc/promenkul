@@ -26,6 +26,8 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.nginx.entrypoints=web"
       - "traefik.http.routers.nginx.rule=Host(`www.promenkul.org`)"
+      - "traefik.http.middlewares.promenkul_compress.compress=true"
+      - "traefik.http.routers.promenkul.middlewares=promenkul_compress"
 networks:
   default:
     external:
