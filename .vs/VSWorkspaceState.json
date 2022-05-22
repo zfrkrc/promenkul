@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\certbot\\www"
+    "\\certbot",
+    "\\certbot\\www",
+    "\\conf",
+    "\\nginx",
+    "\\nginx\\assets"
   ],
-  "SelectedNode": "\\docker-compose.yaml",
+  "SelectedNode": "\\nginx\\index.html",
   "PreviewInSolutionExplorer": false
 }
