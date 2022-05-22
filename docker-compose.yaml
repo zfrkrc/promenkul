@@ -7,7 +7,7 @@ services:
     hostname: "www.promenkul.org"
     restart: unless-stopped
     volumes:
-      - ./nginx:/usr/share/nginx/html:rw
+      - ./nginx:/usr/share/nginx/html:ro
       - ./conf/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./conf/mime.types:/etc/nginx/mime.types:ro
     ports:
