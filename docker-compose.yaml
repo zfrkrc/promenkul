@@ -12,7 +12,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.middlewares.promenkul_compress.compress=true"
       - "traefik.http.routers.promenkul.middlewares=promenkul_compress"
-      - "traefik.http.routers.nginx.rule=Host(`nginx.promenkul.org`)"
+      - "traefik.http.routers.nginx.rule=Host(`promenkul.org`)"
   traefik:
     image: "traefik:v2.6"
     container_name: "traefik"
