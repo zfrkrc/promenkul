@@ -4,6 +4,7 @@ services:
   nginx:
     image: nginx:latest
     container_name: promenkul
+    hostname: promenkul.org
     restart: unless-stopped
     volumes:
       - ./nginx:/usr/share/nginx/html:ro
