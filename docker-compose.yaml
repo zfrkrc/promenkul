@@ -6,6 +6,22 @@ services:
     container_name: webserver
     restart: unless-stopped
     ports:
-      - 80:80
+      - 8080:8080
     volumes:
       - ./nginx:/usr/share/nginx/html:ro
+    labels:
+      - "traefik.http.middlewares.webserver_compress.compress=true"
+      - "traefik.http.routers.webserver.middlewares=webserver_compress"
+  traefik:
+    image: "traefik:v2.6"
+    container_name: "traefik"
+    command:
+      #- "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
