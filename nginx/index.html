@@ -3,14 +3,14 @@
 <head>
 	<!-- Google Tag Manager -->
 	<script>
-	(function (w, d, s, l, i) {
+		(function (w, d, s, l, i) {
 			w[l] = w[l] || []; w[l].push({
 				'gtm.start':
 					new Date().getTime(), event: 'gtm.js'
 			}); var f = d.getElementsByTagName(s)[0],
 				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
 					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M2S927G');</script>
+		})(window, document, 'script', 'dataLayer', 'GTM-M2S927G');</script>
 	<!-- End Google Tag Manager -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,6 +33,77 @@
 	<link rel="stylesheet" href="assets/libs/fontawesome/css/all.css">
 	<link rel="stylesheet" href="assets/css/animate.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Required JS -->
+	<script src="assets/js/bootstrap.bundle.min.js" defer></script>
+	<script src="assets/js/jquery.min.js" defer></script>
+	<script src="assets/js/owl.carousel.min.js" defer></script>
+	<script src="assets/libs/fontawesome/js/all.js" defer></script>
+	<script src="assets/js/isotope.pkgd.min.js" defer></script>
+	<script src="assets/js/custom.js" defer></script>
+
+	<script>
+
+		var TxtType = function (el, toRotate, period) {
+			this.toRotate = toRotate;
+			this.el = el;
+			this.loopNum = 0;
+			this.period = parseInt(period, 10) || 2000;
+			this.txt = '';
+			this.tick();
+			this.isDeleting = false;
+		};
+
+		TxtType.prototype.tick = function () {
+			var i = this.loopNum % this.toRotate.length;
+			var fullTxt = this.toRotate[i];
+
+			if (this.isDeleting) {
+				this.txt = fullTxt.substring(0, this.txt.length - 1);
+			} else {
+				this.txt = fullTxt.substring(0, this.txt.length + 1);
+			}
+
+			this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+			var that = this;
+			var delta = 200 - Math.random() * 100;
+
+			if (this.isDeleting) { delta /= 2; }
+
+			if (!this.isDeleting && this.txt === fullTxt) {
+				delta = this.period;
+				this.isDeleting = true;
+			} else if (this.isDeleting && this.txt === '') {
+				this.isDeleting = false;
+				this.loopNum++;
+				delta = 500;
+			}
+
+			setTimeout(function () {
+				that.tick();
+			}, delta);
+		};
+
+		window.onload = function () {
+
+			var elements = document.getElementsByClassName('typewrite');
+			for (var i = 0; i < elements.length; i++) {
+				var toRotate = elements[i].getAttribute('data-type');
+				var period = elements[i].getAttribute('data-period');
+				if (toRotate) {
+					new TxtType(elements[i], JSON.parse(toRotate), period);
+				}
+			}
+
+			// INJECT CSS
+
+			var css = document.createElement("style");
+			css.type = "text/css";
+			css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+			document.body.appendChild(css);
+
+		};
+	</script>
 
 </head>
 <body>
@@ -1436,78 +1507,5 @@
 			</div>
 		</footer>
 	</div>
-
-	<!-- Required JS -->
-	<script src="assets/js/bootstrap.bundle.min.js" async></script>
-	<script src="assets/js/jquery.min.js" async></script>
-	<script src="assets/js/owl.carousel.min.js" async></script>
-	<script src="assets/libs/fontawesome/js/all.js" async></script>
-	<script src="assets/js/isotope.pkgd.min.js" async></script>
-	<script src="assets/js/custom.js" async></script>
-	    
-    <script>
-
-    	var TxtType = function(el, toRotate, period) {
-    		this.toRotate = toRotate;
-    		this.el = el;
-    		this.loopNum = 0;
-    		this.period = parseInt(period, 10) || 2000;
-    		this.txt = '';
-    		this.tick();
-    		this.isDeleting = false;
-    	};
-    
-    	TxtType.prototype.tick = function() {
-    		var i = this.loopNum % this.toRotate.length;
-    		var fullTxt = this.toRotate[i];
-    
-    		if (this.isDeleting) {
-    			this.txt = fullTxt.substring(0, this.txt.length - 1);
-    		} else {
-    			this.txt = fullTxt.substring(0, this.txt.length + 1);
-    		}
-    
-    		this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-    
-    		var that = this;
-    		var delta = 200 - Math.random() * 100;
-    
-    		if (this.isDeleting) { delta /= 2; }
-    
-    		if (!this.isDeleting && this.txt === fullTxt) {
-    			delta = this.period;
-    			this.isDeleting = true;
-    		} else if (this.isDeleting && this.txt === '') {
-    			this.isDeleting = false;
-    			this.loopNum++;
-    			delta = 500;
-    		}
-    
-    		setTimeout(function() {
-    			that.tick();
-    		}, delta);
-    	};
-    
-    	window.onload = function() {
-    
-    		var elements = document.getElementsByClassName('typewrite');
-    		for (var i=0; i<elements.length; i++) {
-    			var toRotate = elements[i].getAttribute('data-type');
-    			var period = elements[i].getAttribute('data-period');
-    			if (toRotate) {
-    				new TxtType(elements[i], JSON.parse(toRotate), period);
-    			}
-    		}
-    
-    	// INJECT CSS
-    
-    	var css = document.createElement("style");
-    	css.type = "text/css";
-    	css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    	document.body.appendChild(css);
-    
-    };
-    </script>
-	
 </body>
 </html>
