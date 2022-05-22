@@ -7,5 +7,19 @@ services:
     restart: unless-stopped
     ports:
       - 80:80
+      - 443:443
     volumes:
       - ./nginx:/usr/share/nginx/html:ro
+      - ./conf/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./conf/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./certbot/www/certs.crt:/etc/ssl/certs/certs.crt:ro
+      - ./certbot/www/private.key:/etc/ssl/private/private.key:ro
+  shiny:
+    image: mdancho/shinyauth:latest
+    container_name: shiny
+    restart: unless-stopped
+    expose:
+      - 3838
+    volumes:
+      - ./nginx:/srv/shiny-server/
+      - /home/ubuntu/log/shiny-server/:/var/log/shiny-server/
