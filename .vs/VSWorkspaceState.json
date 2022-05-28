@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
-    "",
     "\\certbot",
-    "\\certbot\\www",
     "\\conf",
-    "\\nginx",
-    "\\nginx\\assets"
+    "\\nginx"
   ],
-  "SelectedNode": "\\nginx\\index.html",
   "PreviewInSolutionExplorer": false
 }
