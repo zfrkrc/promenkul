@@ -27,7 +27,7 @@ algolia:
   icons:
     - algolia
   label: Algolia
-  url: 'https://www.algolia.com'
+  url: 'http://www.algolia.com'
 amazon-web-services:
   icons:
     - aws
@@ -37,7 +37,7 @@ amilia:
   icons:
     - amilia
   label: Amilia
-  url: 'https://www.amilia.com'
+  url: 'http://www.amilia.com'
 angry-creative:
   icons:
     - angrycreative
@@ -52,7 +52,7 @@ apper-systems-ab:
   icons:
     - apper
   label: Apper Systems AB
-  url: 'https://www.apper.com'
+  url: 'http://www.apper.com'
 'asymmetrik,ltd':
   icons:
     - asymmetrik
@@ -119,12 +119,12 @@ cibltd:
   icons:
     - drum-steelpan
   label: Comprehensive Insurance Brokers Limited
-  url: 'https://www.cibltd.com'
+  url: 'http://www.cibltd.com'
 clear-blue-technologies:
   icons:
     - solar-panel
   label: Clear Blue Technologies
-  url: 'https://www.clearbluetechnologies.com'
+  url: 'http://www.clearbluetechnologies.com'
 clicdata:
   icons:
     - chart-column
@@ -180,7 +180,7 @@ deskpro:
   icons:
     - deskpro
   label: Deskpro
-  url: 'https://www.deskpro.com'
+  url: 'http://www.deskpro.com'
 discourse:
   icons:
     - discourse
@@ -200,7 +200,7 @@ dyalog-apl:
   icons:
     - dyalog
   label: Dyalog APL
-  url: 'https://www.dyalog.com'
+  url: 'http://www.dyalog.com'
 econopublish:
   icons:
     - hat-cowboy-side
@@ -210,7 +210,7 @@ firstdraft:
   icons:
     - firstdraft
   label: firstdraft
-  url: 'https://www.firstdraft.com'
+  url: 'http://www.firstdraft.com'
 fleetplan:
   icons:
     - helicopter
@@ -330,7 +330,7 @@ hub-spot:
   icons:
     - hubspot
   label: HubSpot
-  url: 'https://www.HubSpot.com'
+  url: 'http://www.HubSpot.com'
 in-site-systems:
   icons:
     - toolbox
@@ -354,7 +354,7 @@ joget:
   icons:
     - joget
   label: Joget
-  url: 'https://www.joget.org'
+  url: 'http://www.joget.org'
 jon-galloway:
   icons:
     - crow
@@ -409,7 +409,7 @@ mizuni:
   icons:
     - mizuni
   label: Mizuni
-  url: 'https://www.mizuni.com'
+  url: 'http://www.mizuni.com'
 mrt:
   icons:
     - medrt
@@ -424,7 +424,7 @@ napster:
   icons:
     - napster
   label: Napster
-  url: 'https://www.napster.com'
+  url: 'http://www.napster.com'
 nfc-forum:
   icons:
     - nfc-directional
@@ -451,7 +451,7 @@ nutritionix:
   icons:
     - nutritionix
   label: Nutritionix
-  url: 'https://www.nutritionix.com'
+  url: 'http://www.nutritionix.com'
 octopus-deploy:
   icons:
     - octopus-deploy
