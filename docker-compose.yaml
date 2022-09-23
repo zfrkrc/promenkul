@@ -12,7 +12,3 @@ services:
       - ./conf/mime.types:/etc/nginx/mime.types:ro
     ports:
       - "80:80"
-networks:
-  default:
-    external:
-      name: traefik_net
