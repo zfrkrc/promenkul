@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
     <title>PROMENKUL</title>
@@ -223,5 +225,28 @@
     <script src="assets/libs/fontawesome/js/all.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <div id="my-signin2"></div>
+    <script>
+      function onSuccess(googleUser) {
+        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+      }
+      function onFailure(error) {
+        console.log(error);
+      }
+      function renderButton() {
+        gapi.signin2.render('my-signin2', {
+          'scope': 'profile email',
+          'width': 240,
+          'height': 50,
+          'longtitle': true,
+          'theme': 'dark',
+          'onsuccess': onSuccess,
+          'onfailure': onFailure
+        });
+      }
+    </script>
+  
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 </html>
+
