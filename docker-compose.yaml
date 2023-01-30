@@ -12,3 +12,6 @@ services:
       - ./conf/mime.types:/etc/nginx/mime.types:ro
     ports:
       - "80:80"
+    environment:
+      - BASIC_AUTH_USERNAME=zafer@zafer.net
+      - BASIC_AUTH_PASSWORD=1234
