@@ -5,8 +5,8 @@ EMAIL=$2
 echo MARIADB_USER=matomo > .env
 echo MARIADB_PASSWORD=`openssl rand 30 | base64 -w 0` >> .env
 echo MARIADB_ROOT_PASSWORD=`openssl rand 30 | base64 -w 0` >> .env
-echo DOMAIN=${DOMAIN} >> .env
-echo EMAIL=${EMAIL} >> .env
+echo DOMAIN=www.promenkul.org >> .env
+echo EMAIL=zafer@zaferkaraca.net >> .env
  
 # Phase 1
 docker-compose -f ./docker-compose-initiate.yaml up -d nginx
