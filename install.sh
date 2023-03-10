@@ -6,7 +6,7 @@ echo MARIADB_USER=matomo > .env
 echo MARIADB_PASSWORD=`openssl rand 30 | base64 -w 0` >> .env
 echo MARIADB_ROOT_PASSWORD=`openssl rand 30 | base64 -w 0` >> .env
 echo DOMAIN=www.promenkul.org >> .env
-echo EMAIL=zafer@zaferkaraca.net >> .env
+echo EMAIL=admin@promenkul.org >> .env
  
 # Phase 1
 docker-compose -f ./docker-compose-initiate.yaml up -d nginx
